@@ -6,7 +6,7 @@ import {RootState} from "../store/store.ts";
 const GameControls: React.FC = () => {
     const dispatch = useDispatch();
     const size = useSelector((state: RootState) => state.settings.size);
-    const username = localStorage.getItem("username");
+    const username = localStorage.getItem("userName");
 
     return (
         <div className="flex flex-col items-center gap-2">

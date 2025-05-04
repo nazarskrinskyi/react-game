@@ -10,7 +10,7 @@ const Board: React.FC = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        const username = localStorage.getItem("username");
+        const username = localStorage.getItem("userName");
         if (!username) {
             navigate("/start");
         }
