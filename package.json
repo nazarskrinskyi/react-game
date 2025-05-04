@@ -4,16 +4,14 @@
   "version": "0.0.0",
   "type": "commonjs",
   "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "build": "remix vite:build",
-    "dev": "remix dev"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.1.1",
     "@reduxjs/toolkit": "^2.6.0",
-    "@remix-run/dev": "^2.16.5",
-    "@remix-run/netlify": "^1.19.3",
     "@tailwindcss/postcss": "^4.0.9",
     "autoprefix": "^1.0.1",
     "autoprefixer": "^10.4.20",
@@ -27,7 +25,6 @@
     "react-to-print": "^3.0.5",
     "redux": "^5.0.1",
     "redux-persist": "^6.0.0",
-    "remix": "^2.16.5",
     "tailwindcss": "^4.0.9",
     "zustand": "^5.0.3"
   },
@@ -43,7 +40,6 @@
     "tailwindcss-cli": "^0.1.2",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0",
-    "vite-plugin-remix": "^0.2.6"
+    "vite": "^6.2.0"
   }
 }
