@@ -38,7 +38,7 @@ const App: React.FC = () => {
         localStorage.removeItem("userEmail");
         localStorage.removeItem("userName");
         setIsLoggedIn(false);
-        window.location.href = "/start"; // force redirect
+        window.location.href = "/start";
     };
 
     return (
