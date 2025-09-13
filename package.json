@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "vite preview --port $PORT --host 0.0.0.0"
+    "start": "serve -s dist -l $PORT"
   },
   "engines": {
     "node": "22.x",
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "autoprefix": "^1.0.1",
     "autoprefixer": "^10.4.20",
     "classnames": "^2.5.1",
@@ -29,6 +30,8 @@
     "redux": "^5.0.1",
     "redux-persist": "^6.0.0",
     "rollup": "^4.50.1",
+    "serve": "^14.2.5",
+    "vite": "^6.3.6",
     "zustand": "^5.0.3"
   },
   "devDependencies": {
@@ -36,15 +39,13 @@
     "@tailwindcss/postcss": "^4.1.13",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "tailwindcss": "^4.1.6",
     "typescript": "~5.7.2",
-    "typescript-eslint": "^8.24.1",
-    "vite": "^6.3.6"
+    "typescript-eslint": "^8.24.1"
   },
   "main": "index.js",
   "repository": "git@github.com:nazarskrinskyi/react-game.git",
